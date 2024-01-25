@@ -1,0 +1,74 @@
+/* стилизация всей страницы */
+* {font-family: 'Permanent Marker', cursive;}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #00775bad, #005e7e);
+    color: #333;
+}
+
+/* Оформление контейнера с ячейками */
+#game-x-o {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+/* Оформление ячеек */
+.cell {
+    background-color: rgb(234, 234, 234);
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #008f8f;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.cell:hover {
+    background-color: #c8c8c8
+}
+
+.restart {
+    margin-top: 20px;
+    background-color: #004240;
+    color: rgb(234, 234, 234);
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    display: block;
+    cursor: pointer
+}
+
+@media (max-width: 600px) {
+    .cell {
+        width: 80px;
+        height: 80px;
+    }
+    
+    #game-x-o {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+}
+
+.massage {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(184, 205, 0);
+    margin-top: 10px;
+}
