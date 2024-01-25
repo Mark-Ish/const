@@ -52,6 +52,13 @@ body {
     cursor: pointer
 }
 
+.massage {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(184, 205, 0);
+    margin-top: 10px;
+}
+
 @media (max-width: 600px) {
     .cell {
         width: 80px;
@@ -70,25 +77,20 @@ body {
 
 @media (max-width: 400px) {
     .cell {
-        width: 70px;
-        height: 70px;
-        font-size: 2rem;
+        width: 75px;
+        height: 75px;
+        font-size: 3rem;
     }
     
     #game-x-o {
-        grid-template-columns: repeat(3, 90px);
-        grid-template-rows: repeat(3, 90px);
+        grid-template-columns: repeat(3, 75px);
+        grid-template-rows: repeat(3, 75px);
+        gap: 15px;
     }
 
     .restart {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
 
-.massage {
-    text-align: center;
-    font-size: 40px;
-    color: rgb(184, 205, 0);
-    margin-top: 10px;
-}
