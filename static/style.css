@@ -12,7 +12,6 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  width: 60vmin;
 }
 
 #game-x-o {
@@ -32,6 +31,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border: none;
+  padding: 0vmin;
 }
 
 .cell:hover {
