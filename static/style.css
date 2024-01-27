@@ -3,53 +3,51 @@
 * {font-family: 'Permanent Marker', cursive;}
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(to right, #00775bad, #005e7e);
-    color: #333;
+  height: 100vh;
+  background: linear-gradient(to right, #00775bad, #005e7e);
+}
+
+.conteiner {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 #game-x-o {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2vmin;
 }
 
 .cell {
-    background-color: rgb(234, 234, 234);
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    color: #008f8f;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border: none;
+  background-color: rgb(234, 234, 234);
+  width: 25vmin;
+  height: 25vmin;
+  border-radius: 5px;
+  font-size: 16vmin;
+  color: #008f8f;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
 }
 
 .cell:hover {
-    background-color: #c8c8c8
+  background-color: #d4d4d4
 }
 
 .restart {
-    margin-top: 20px;
-    background-color: #004240;
-    color: rgb(234, 234, 234);
-    width: 80px;
-    height: 30px;
-    border-radius: 5px;
-    font-size: 18px;
-    border: none;
-    display: block;
-    cursor: pointer
+  width: 5em;
+  font-size: 1.4em;
+  padding: 0.4em;
+  border-radius: 5px;
+  margin: 1em auto 0 auto;
+  border: none;
+  display: block;
+  cursor: pointer;
+  background-color: #004240;
+  color: rgb(234, 234, 234);
 }
 
 .massage {
@@ -58,39 +56,3 @@ body {
     color: rgb(184, 205, 0);
     margin-top: 10px;
 }
-
-@media (max-width: 600px) {
-    .cell {
-        width: 80px;
-        height: 80px;
-    }
-
-    #game-x-o {
-        grid-template-columns: repeat(3, 80px);
-        grid-template-rows: repeat(3, 80px);
-    }
-
-    .restart {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 400px) {
-    .cell {
-        width: 75px;
-        height: 75px;
-        font-size: 3rem;
-    }
-    
-    #game-x-o {
-        grid-template-columns: repeat(3, 75px);
-        grid-template-rows: repeat(3, 75px);
-        gap: 15px;
-    }
-
-    .restart {
-        font-size: 12px;
-    }
-}
-
-
