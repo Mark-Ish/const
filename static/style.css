@@ -23,10 +23,10 @@ body {
 
 .cell {
   background-color: rgb(234, 234, 234);
-  width: 25vmin;
-  height: 25vmin;
+  width: 18vmin;
+  height: 18vmin;
   border-radius: 5px;
-  font-size: 16vmin;
+  font-size: 12vmin;
   color: #008f8f;
   cursor: pointer;
   transition: background-color 0.3s ease;
